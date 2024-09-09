@@ -28,7 +28,7 @@ To automatically move your pdfs with ZotFile to a custom folder (to sync it, etc
 
 ## Renaming titles with subindexes via ZotFile
 
-Some papers have subindexes on the title, such as in MAPbI$_3$. These subindexes are rendered in HTML, using the tags `MAPbI<sub>3</sub>`. This is useful when referencing, but instead of saving titles as `MAPbI3`, ZotFile will incorrectly introduce those "sub" tags on the renamed PDFs by default. To remove HTML tags such as `<sub>` from the renamed pdf files, you need to configure a custom ZotFile User Wildcard. [(source)](https://github.com/jlegewie/zotfile/issues/455)
+Some papers have subindexes on the title, such as in MAPbI<sub>3</sub>. These subindexes are rendered in HTML, using the tags `MAPbI<sub>3</sub>`. This is useful when referencing, but instead of saving titles as `MAPbI3`, ZotFile will incorrectly introduce those "sub" tags on the renamed PDFs by default. To remove HTML tags such as `<sub>` from the renamed pdf files, you need to configure a custom ZotFile User Wildcard. [(source)](https://github.com/jlegewie/zotfile/issues/455)
 To fix that, simply go to `Edit, Preferences, Advanced, Config Editor` and click on accept the risk (because if we are brave enough there is no risk). Search for `zotfile.wildcards.user`, and introduce the following text:
 ```
 {"1": {"field": "title", "operations":[{"function": "replace", "regex": "<sub>", "replacement":"", "flags":"g"},{"function": "replace", "regex": "</sub>", "replacement":"", "flags":"g"}]}}
