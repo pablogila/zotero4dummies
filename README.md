@@ -11,6 +11,7 @@ The browser addon [Zotero Connector](https://www.zotero.org/download/) will auto
 You definitely should also install the following plugins:
 - [Better BibTex for Zotero](https://retorque.re/zotero-better-bibtex/installation/index.html), which lets you customize the citation keys
 - [ZotMoov](https://github.com/wileyyugioh/zotmoov) to automatically rename the PDFs and save them on a custom folder, which you can sync with the cloud or else. ZotMoov works for all Zotero Versions. Note that ZotMoov is a replacement for [ZotFile](http://zotfile.com/#how-to-install--set-up-zotfile), an older and discontinued plugin which only works for Zotero versions lower than 7.
+
 Another cool and useful plugin is:
 - [Inciteful Zotero Plugin](https://github.com/inciteful-xyz/inciteful-zotero-plugin), which helps you find related literature.  
 
