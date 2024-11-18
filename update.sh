@@ -1,6 +1,7 @@
 # This script copies my current Obsidian notes as the README.md file, and pushes to GitHub.
 #!/bin/bash
 
+version="v2024.11.18"
 original="/home/pablo/Documents/obsidian/Work ⚛️/Instruments/Zotero.md"
 final="README.md"
 title="zotero4dummies update"
@@ -25,7 +26,7 @@ fi
 
 git status
 git add .
-git commit -m "Automatic update from Obsidian on $date"
+git commit -m "Automatic update from Obsidian on $date with $version"
 
 if [ $? -ne 0 ]; then
     (zenity --error --text="Git commit failed. \nCheck it manually..." --no-wrap --title="$title") &
